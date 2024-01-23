@@ -30,7 +30,7 @@
                     const splText = template.replace('FULL-NUMERIC-YEAR', fullNumericYear).replace('YOUR-REAL-NAME-OR-ORG', name);
 
                     // Set the body content to the generated SPL text
-                    document.body.innerHTML = `<pre>${splText}</pre>`;
+                    document.body.innerText = `${splText}`;
                 })
                 .catch(error => console.error('Error fetching SPL template:', error));
         }
