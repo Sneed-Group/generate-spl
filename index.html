@@ -22,7 +22,7 @@
             const name = document.getElementById('name').value;
 
             // Fetch the latest SPL template
-            fetch('http://nodemixaholic.com:3002/nodemixaholic/samuel-public-license/raw/branch/main/LICENSE')
+            fetch('https://raw.githubusercontent.com/NodeMixaholic/samuel-public-license/main/LICENSE')
                 .then(response => response.text())
                 .then(template => {
                     // Replace placeholders with actual values
