@@ -22,7 +22,7 @@
             const name = document.getElementById('name').value;
 
             // Fetch the latest SPL template
-            fetch('https://raw.githubusercontent.com/Sneed-Group/sammy-public-license/main/LICENSE')
+            fetch('https://raw.githubusercontent.com/Sneed-Group/spl-template-repo/refs/heads/main/LICENSE')
                 .then(response => response.text())
                 .then(template => {
                     // Replace placeholders with actual values
